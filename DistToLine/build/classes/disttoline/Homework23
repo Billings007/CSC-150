@@ -1,0 +1,34 @@
+1. The classes that convert primitives to objects are called wrapper classes.
+2. Name the four primitive data types with which wrapper classes primarily deal.
+int
+char
+double
+boolean
+3. Write code that will convert double dx into a wrapper class object. Call the object dd.
+Double dd = dx;
+4. Write code that will produce Boolean type wrapper object called bj (“wrap” a true inside
+it).
+Boolean bj = true;
+5. Write code that will convert the integer ip into an Integer wrapper class object. Calle the
+object ozzie.
+Integer ozzie = ip;
+6. Assume you have the object Character cw. Write code to convert this to a primitive
+character.
+char c = cw.charValue();
+7. Assume you have Double objects d1 and d2. Show how you would multiply the values
+stored it in these objects then store the answer in primitive double dd.
+double dd = d1*d2;
+8. Assume you have Integer objects i1 and i2. Show how you would add the values stored
+in these objects then store the answer in a third Integer object called i3.
+Integer i3 = i1 + i2;
+9. Write code that will extract the boolean wrapped in the Boolean wnOh and test it with an
+if statement.
+if (wnOh.booleanValue())
+10. Convert the object jj ( of type Double) into a primitive float called ff.
+float ff = jj.floatValue();
+11. Convert the object pk (of type Double) into a primitive int called gurg. What is the
+danger of doing this?
+int gurg = pk.intValue();
+danger is losing fractional part
+12. What is the primary purpose of wrapper classes? 
+Convert the primitive data types into their object equivalents.

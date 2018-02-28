@@ -1,0 +1,448 @@
+
+{
+
+public String s;
+
+private int i;
+
+public int blue(double x)
+
+{ . . . }
+
+}
+
+public class Green
+
+{
+
+private double mm;
+
+public long xx;
+
+public double peabody(double y)
+
+{
+
+return mm;
+
+}
+
+private boolean crunch( )
+
+{ . . . }
+
+}
+
+1. Which of the above two classes is the base class?
+
+2. Which of the above two classes is the subclass?
+
+3. Which of the above two classes is the superclass?
+
+4. Which of the above two classes is the derived class?
+
+5. Is this legal? If not, why not? (Assume this code is in some class other than the two above)
+
+Red myObj = new Red( );
+
+boolean bb = myObj.crunch( );
+
+6. Is this legal? If not, why not? (Assume this code is in some class other than the two
+
+above)
+
+Red myObj = new Red( );
+
+int bb = myObj.blue(105.2);
+
+7. Write code for the blue method that will printout the mm state variable.
+
+8. Write code for the blue method that will printout the xx state variable.
+
+Use the following two classes for problems 9 - 12:
+
+public class Red extends Green
+
+{
+
+Homework 27: Inheritance
+
+public String s;
+
+private int i;
+
+public int blue(double x)
+
+{ . . . }
+
+public double peabody(double vv)
+
+{
+
+}
+
+}
+
+public class Green
+
+{
+
+private double mm;
+
+public long xx;
+
+public Green(long j)
+
+{
+
+xx = j;
+
+}
+
+public double peabody(double y)
+
+{
+
+return mm;
+
+}
+
+private Boolean crunch( )
+
+{ . . . }
+
+}
+
+9. Consider the following constructor in the Red class:
+
+public Red( )
+
+{
+
+//What code would you put here to invoke the constructor in the
+
+//superclass and send it a parameter value of 32000?
+
+}
+
+10. Is there any method in Red that is overriding a method in Green? If so, what is it?
+
+11. Look at the peabody method inside Red. Write the code inside that method that will allow
+
+you to access the same method inside its superclass, Green. Let the parameter have a value of
+
+11.
+
+12. Consider the following constructor in the Red class:
+
+public Red( )
+
+{
+
+String s = “Hello”;
+
+super(49);
+
+}
+
+Homework 27: Inheritance
+
+Is this code legal? If not, why?
+
+13. Assume that the following fragments of code are all in a subclass. Match each to an item
+
+from the “sentence bank” to the right.
+
+_____ this(x,y) a. refers to a constructor in the superclass
+
+_____ this.z b. refers to a constructor in the subclass
+
+_____ super(j) c. refers to an overridden method in the super class
+
+_____ super.calc( ) d. refers to a data member in a subclass
+
+Part II
+
+The following code applies to problems 1 - 3:
+
+public abstract class Hammer
+
+{
+
+public abstract void duty( );
+
+public abstract int rule(int d);
+
+}
+
+public class Lurch extends Hammer
+
+{
+
+private int Y = 30;
+
+private int x;
+
+public void duty( )
+
+{
+
+int x = Y;
+
+}
+
+public int rule( int d)
+
+{
+
+Y = d + 1;
+
+return Y;
+
+}
+
+}
+
+1. What is the purpose of making the two methods above abstract?
+
+2. Write out the full signature of the rule method.
+
+3. Which class actually implements the duty method?
+
+4. A class for which you cannot create objects is called a (an)___________ class.
+
+5. public abstract class Felix
+
+{
+
+. . .
+
+}
+
+Is the following attempt at instantiating an object from the Felix class legal? If not, why?
+
+Felix myFelix = new Felix( );
+
+Homework 27: Inheritance
+
+6. Is the following legal? If not, why?
+
+public abstract class Lupe
+
+{
+
+public abstract void fierce( )
+
+{ . . . }
+
+public final double PI = 3.14;
+
+}
+
+7. What is the main reason for using abstract classes?
+
+8. Modify the following class so it is impossible to make subclasses from it.
+
+public class MyClass
+
+{
+
+...
+
+}
+
+9. Why would the following code be pointless?
+
+public final abstract class MyClass
+
+{
+
+. . .
+
+//there are no static methods
+
+}
+
+10. public class ChevyChase
+
+{
+
+public void Chicago(int x)
+
+{
+
+. . .
+
+}
+
+}
+
+Modify the above code so as to make it impossible for a subclass that extends
+
+ChevyChase to override the Chicago method.
+
+11. Is it possible to override instance fields (also called state variables)?
+
+12. What is shadowing (as the term applies to superclasses and subclasses)?
+
+The following code applies to problems 13 – 17
+
+public class Parent
+
+{
+
+public void rubyDoo( )
+
+{ . . . }
+
+. . .
+
+public int x = 0;
+
+}
+
+public class Child extends Parent
+
+Homework 27: Inheritance
+
+{
+
+public void busterStein()
+
+{ ... }
+
+...
+
+public int x = 39;
+
+}
+
+13. Consider the following code in a Tester class:
+
+Child myChild = new Child( );
+
+System.out.println(myChild.x); //What gets printed?
+
+14. Consider the following code in a Tester class:
+
+Child myChild = new Child( );
+
+Is there any way using the myChild object to retrieve the x state field within the Parent
+
+class? Write the code that will do this. You may write a new method for either class if
+
+you need to.
+
+15. Is the following legal? If not, why not?
+
+Child theObj = new Child( );
+
+Parent newObj = theObj;
+
+newObj.busterStein( );
+
+16. Is the following legal? If not, why not?
+
+Child theObj = new Child( );
+
+Parent newObj = theObj;
+
+newObj.rubyDoo( );
+
+17. Is the following legal? If not, why not?
+
+Parent meatloaf = new Child();
+
+For problems 18-22, consider the following. In each problem either state what is printed or
+
+indicate that it won’t compile:
+
+public class A
+
+{
+
+public A (int x)
+
+{
+
+this.x = x;
+
+}
+
+public int f( )
+
+{
+
+return x;
+
+}
+
+Homework 27: Inheritance
+
+public int g( )
+
+{
+
+return x;
+
+}
+
+public int x;
+
+}
+
+public class B extends A
+
+{
+
+public B (int x, int y)
+
+{
+
+super(x);
+
+this.x = y;
+
+}
+
+public int f( ) { return x + g( ); }
+
+public int zorro( ) { return x + g( ); }
+
+public int x;
+
+}
+
+18. A a = new B(5, 10);
+
+System.out.println(a.g( ));
+
+19. A a = new B(5, 10);
+
+System.out.println( a.f( ) );
+
+20. A a = new B(5, 10);
+
+System.out.println( a.x );
+
+21. B a = new B(5, 10);
+
+System.out.println( a.x );
+
+22. A a = new B(5, 10);
+
+System.out.println( a.zorro( ) );
+
+23. Consider the classes Food, Cheese, and Velveeta where Cheese is a subclass of Food and
+
+Velveeta is a subclass of Cheese. State which of the following lines of code are legal.
+
+Cheese c = new Food( );
+
+Velveeta v = new Food( );
+
+Cheese c = new Velveeta( );
+
+Food f = new Velveeta( );
+
+Food f = new Cheese(

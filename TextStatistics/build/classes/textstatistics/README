@@ -1,0 +1,29 @@
+# Project 3: Process Statistics
+
+This project allows for a user to input a word document and 
+
+## Getting Started
+
+To start the program just download it from the grading section
+
+
+## Running the tests
+
+to run the tests compile the document into your computer and when prompted input a file location for the program to scan
+
+### Break down into end to end tests
+
+I tested this in my own command line and it worked well and was very helpful
+
+### And coding style tests
+
+The biggest tests with this project was getting the letter count and the average wordlength to print. I met these head on and made my way through the challenges
+
+
+## Built With
+
+NetBeans IDE
+
+## Authors
+
+Parker Billings

@@ -1,0 +1,47 @@
+# Project 2: PlayList
+
+* Author: Parker Billings
+* Class: AP CS
+* Semester: Spring 2017
+
+## Overview
+
+This program is a playlist maker. It allows a user to type a playlist
+into it and it finds the song path. The playlist maker then finds the
+songs and orders them to play least length to greatest length.
+It also finds the song closest to 4 minutes and the average 
+play time.
+
+## Compiling and Using
+
+Compile the program using the command prompt and using javac
+PlayList.java and compile Song.java the same way. Type in a song name,
+the song author, the song length, and the song file path for 3 songs
+continue to run the songs.
+
+## Discussion
+
+I had an easy time with this project.
+* The first snag I ran into was trying to get the song
+that was closest in legnth to 4 minutes
+* The second and only major problem I had was sorting the
+songs from least to greatest, but that was resolved using
+the Arrays.sort method in the lambda expression
+
+## Testing
+
+I tested the project many times throughout to make sure it ran
+in a timely and correct manner as it pertains to running the 
+project. The project fully works and has been tested with many songs.
+
+## Extra Credit
+
+I utilized an array and a loop to write to the array for extra credit
+
+## Sources used
+
+(https://docs.oracle.com/javase/7/docs/api/java/util/Comparator.html)
+(http://stackoverflow.com/questions/18895915/how-to-sort-an-array-of-objects-in-java)
+
+----------
+This README template is using Markdown. To preview your README output, you can copy your file contents to a Markdown editor/previewer such as [https://stackedit.io/editor](https://stackedit.io/editor).
